@@ -1,45 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Flibuste</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Flibuste</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>La Flibuste</h1>
-        <p class="slogan">Ni bar, ni resto, ni boutique… La Flibuste, c’est tout ça à la fois !</p>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Notre Concept</a></li>
-                <li class="dropdown">
-                    <a href="#">Nos Univers</a>
-                    <ul class="submenu">
-                        <li><a href="#">Épicerie fine</a></li>
-                        <li><a href="#">Cave à vins</a></li>
-                        <li><a href="#">Guinguette</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Actualités & Événements</a></li>
-                <li><a href="#">Contact</a></li>
+  <header>
+    <div class="container">
+      <h1 class="logo">La Flibuste</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#concept">Notre Concept</a></li>
+          <li class="dropdown">
+            <a href="#univers">Nos Univers ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="#epicerie">Épicerie fine</a></li>
+              <li><a href="#cave">Cave à vins</a></li>
+              <li><a href="#guinguette">Guinguette</a></li>
             </ul>
-        </nav>
-    </header>
+          </li>
+          <li><a href="#actualites">Actualités</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="intro">
-            <h2>Bienvenue à La Flibuste !</h2>
-            <p>Installée dans trois conteneurs maritimes réaménagés, La Flibuste est un lieu unique pour les épicuriens curieux.</p>
-            <p>On y flâne, on y trinque, on y déguste : des produits fins, des bouteilles du monde, et des grillades à tomber l’été venu.</p>
-            <p>Que vous soyez amateur de bons produits, de belles quilles ou de moments conviviaux, embarquez avec nous.</p>
-            <p><strong>La Flibuste, c’est bien plus qu’un commerce, c’est une escale gourmande.</strong></p>
-        </section>
-    </main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Ni bar, ni resto, ni boutique…</h2>
+      <p>La Flibuste, c’est tout ça à la fois !</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 La Flibuste. Tous droits réservés.</p>
-    </footer>
+  <section id="concept" class="section">
+    <div class="container">
+      <h2>Notre Concept</h2>
+      <p>La Flibuste est un lieu unique composé de trois conteneurs réaménagés : une épicerie fine, une cave à vins du monde et une guinguette conviviale.</p>
+      <img src="https://source.unsplash.com/800x400/?containers,restaurant" alt="Conteneurs aménagés">
+    </div>
+  </section>
+
+  <section id="univers" class="section">
+    <div class="container">
+      <h2>Nos Univers</h2>
+
+      <div id="epicerie" class="card">
+        <img src="https://source.unsplash.com/400x300/?grocery,fine" alt="Épicerie fine">
+        <h3>Épicerie fine</h3>
+        <p>Produits locaux, nationaux et internationaux sélectionnés pour les gourmets.</p>
+      </div>
+
+      <div id="cave" class="card">
+        <img src="https://source.unsplash.com/400x300/?wine,cave" alt="Cave à vins">
+        <h3>Cave à vins</h3>
+        <p>Sélection moyenne-haut de gamme de vins et spiritueux du monde.</p>
+      </div>
+
+      <div id="guinguette" class="card">
+        <img src="https://source.unsplash.com/400x300/?barbecue,outdoor" alt="Guinguette">
+        <h3>Guinguette</h3>
+        <p>Repas à 40€ par personne, grillades en été, ambiance chaleureuse.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="actualites" class="section">
+    <div class="container">
+      <h2>Actualités & Évènements</h2>
+      <article class="news-item">
+        <h3>Soirée Jazz sur la terrasse</h3>
+        <p>Rejoignez-nous le samedi 10 mai pour une soirée jazz et grillades en plein air.</p>
+      </article>
+      <article class="news-item">
+        <h3>Nouvelle sélection de vins italiens</h3>
+        <p>Découvrez notre nouvelle gamme de vins toscans, disponibles dès maintenant.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact & Accès</h2>
+      <p><strong>Email :</strong> contact@laflibuste.fr<br><strong>Téléphone :</strong> 01 23 45 67 89</p>
+      <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="_replyto" placeholder="Votre email" required>
+        <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?q=Saint%2DCyr%2Dl%27Ecole&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 La Flibuste. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
